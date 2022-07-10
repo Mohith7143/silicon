@@ -1,0 +1,271 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url(./images/green-globe-moss-environmental-concept-68699677.jpg);
+  background-size: cover;
+
+}
+
+#nav-bar {
+  background-color: black;
+  box-sizing: border-box;
+  display: flex;
+  height: 90px;
+  position: sticky;
+  font-size: 19;
+  top: 0;
+  box-shadow: 1px 1px 10px black;
+}
+
+#logo {
+  width: 50px;
+  margin-top: 16px;
+  margin-left: 30px;
+  margin-right: 2px;
+  height: 50px;
+}
+
+#nav-div1 {
+  display: flex;
+  font-size: larger;
+}
+
+#nav-bar-items ul {
+  display: inline-flex;
+  list-style: none;
+  cursor: pointer;
+}
+
+#down {
+  color: #79ba43;
+  position: relative;
+  top: 2;
+  left: 4px;
+}
+
+#nav-bar-items ul li {
+  width: 150px;
+  position: relative;
+  top: -15;
+  margin: 15px;
+  padding: 15px;
+}
+
+#nav-bar-items ul li a {
+  text-decoration: none;
+  color: #79ba43;
+
+}
+
+.sub1 {
+  display: none;
+}
+
+#nav-bar-items ul li:hover .sub1 {
+  display: block;
+  position: absolute;
+  background-color: black;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+#nav-bar-items ul li:hover .sub1 ul {
+  display: block;
+  margin: 10px;
+  font-size: 19;
+}
+
+#nav-bar-items ul li:hover .sub1 ul li {
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px solid #79ba43;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+  margin-left: -15px;
+}
+
+#nav-bar-items ul li:hover .sub1 ul li:last-child {
+  border-bottom: none;
+}
+
+#nav-bar-items ul li:hover .sub1 ul li a:hover {
+  color: #79ba43;
+}
+
+.search-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 60px;
+  background: #353535;
+  line-height: 40px;
+  padding: 10px;
+  border-radius: 60px;
+  cursor: pointer;
+  margin-left: 200px;
+  font-size: 18;
+}
+
+.search-input {
+  background: #353535;
+  color: #fff;
+  outline: none;
+  border: none;
+  line-height: 40px;
+  width: 0px;
+  float: left;
+  font-size: 1em;
+  transition: 0.7s ease;
+}
+
+.search-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background: #353535;
+  padding: 12px;
+  border-radius: 50%;
+  float: right;
+  color: #79ba43;
+  transition: 0.4s ease;
+}
+
+.search-box:hover>.search-input,
+.search-input:focus {
+  width: 240px;
+  margin: 0px 8px;
+}
+
+.search-box:hover>.search-btn,
+.search-input:focus+.search-btn {
+  background: #79ba43;
+  color: #101010;
+}
+
+
+h1 {
+  justify-content: center;
+  color: #79ba43;
+  font-size: 35;
+  position: relative;
+  top: -9;
+  margin-left: 0;
+  font-family: 'Kanit', sans-serif;
+  letter-spacing: -3;
+}
+
+h2 {
+  word-spacing: 5;
+  font-family: 'Kanit', sans-serif;
+  font-weight: lighter;
+  margin-bottom: 0;
+}
+
+#section {
+  position: relative;
+}
+
+form {
+  background-color: white;
+  box-shadow: 2px 2px 8px black;
+  width: 30vw;
+  position: absolute;
+  right: 180;
+  top: 60;
+  border: 1px solid #ccc;
+  font-size: 20;
+  border-radius: 10px;
+  padding: 6px 40px;
+
+}
+
+form>h2 {
+  text-align: center;
+}
+
+.form-element {
+  height: 40px;
+  width: 100%;
+  border: none;
+  line-height: -1;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  font-size: 15;
+}
+
+.div-wrapper {
+  padding: 4px;
+}
+
+#checkbox {
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+
+#btn {
+  background-color: rgb(14, 14, 110);
+  position: relative;
+  left: 130;
+  top: 35;
+  color: white;
+  background-image: linear-gradient(-60deg,
+      transparent, transparent 40%,
+      #ffffff44 40%, #ffffff44 60%,
+      transparent 60%, transparent 100%);
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  background-position-x: 150%;
+  width: 100px;
+  height: 35px;
+  border: none;
+  border-radius: 4px;
+  font-size: large;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 12px;
+}
+
+#btn:hover {
+  background-position-x: -150%;
+  transition: background-position-x 1300ms;
+}
+
+#link {
+  font-size: 15;
+  text-decoration: none;
+  color: black;
+
+}
+
+#link-div {
+  text-align: center;
+  margin-top: 0px;
+}
+
+#link:hover {
+  text-decoration: underline;
+}
+
+.social-icon {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  margin-top: 55px;
+  justify-content: space-around;
+  border-top: 1px solid #ccc;
+  ;
+  padding: 24px 16px 0 16px;
+  margin-bottom: 0;
+}
+
+.img-item {
+  width: 32px;
+  height: 32px;
+}

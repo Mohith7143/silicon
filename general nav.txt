@@ -1,0 +1,254 @@
+<!--html-->
+<html>
+  <head>
+    <title>Global Warming</title>
+    <link rel="stylesheet" href="globalwarming.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/fb15705674.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav id="nav-bar">
+        <div id="nav-div1">
+          <span><img id="logo" src="./images/earth-glober-eco-energy-leaf-nature-save-256.webp" alt="img"></span>
+          <h1>SAVE EARTH</h1>
+          <div id="nav-bar-items">
+            <ul>
+              <li> <a href="#">Home</a></li>
+              <li> <a href="#">Explore</a><i class="fa-solid fa-angle-down" id="down"></i>
+                <div class="sub1">
+                  <ul>
+                    <li>
+                      <a href="../global warming/globalwarming.html" target="_blank">Global warming</a>
+                    </li>
+                    <li>
+                      <a href="#">Deforestion</a>
+                    </li>
+                    <li>
+                      <a href="#">Ozone layer depletion</a>
+                    </li>
+                    <li>
+                      <a href="#">Water Pollution</a>
+                    </li>
+                    <li>
+                      <a href="#">Green house Gases</a>
+                    </li>
+                    <li>
+                      <a href="#">Plastic</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="search-box">
+            <input type="text" placeholder="Search Here..." class="Search-input">
+            <a href="#" class="Search-btn">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+        </div>
+        <div id="reg-btn">
+          <button value="Sign In / Register" id="btn-btn-reg">
+            <a class="btn-link" href="../Register/index.html" target="_blank" >Sign In / Register</a></button>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
+
+/*css*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url(./images/green-globe-moss-environmental-concept-68699677.jpg);
+  background-size: cover;
+
+}
+
+#nav-bar {
+  background-color: black;
+  box-sizing: border-box;
+  display: flex;
+  height: 90px;
+  position: sticky;
+  font-size: 19;
+  top: 0;
+  box-shadow: 1px 1px 10px black;
+}
+
+#logo {
+  width: 50px;
+  margin-top: 16px;
+  margin-left: 30px;
+  margin-right: 2px;
+  height: 50px;
+}
+
+#nav-div1 {
+  display: flex;
+  font-size: larger;
+}
+
+#nav-bar-items ul {
+  display: inline-flex;
+  list-style: none;
+  cursor: pointer;
+}
+
+#down {
+  color: #79ba43;
+  position: relative;
+  top: 2;
+  left: 4px;
+}
+
+#nav-bar-items ul li {
+  width: 150px;
+  position: relative;
+  top: -15;
+  margin: 15px;
+  padding: 15px;
+}
+
+#nav-bar-items ul li a {
+  text-decoration: none;
+  color: #79ba43;
+
+}
+
+.sub1 {
+  display: none;
+}
+
+#nav-bar-items ul li:hover .sub1 {
+  display: block;
+  position: absolute;
+  background-color: black;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+#nav-bar-items ul li:hover .sub1 ul {
+  display: block;
+  margin: 10px;
+  font-size: 19;
+}
+
+#nav-bar-items ul li:hover .sub1 ul li {
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px solid #79ba43;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+  margin-left: -15px;
+}
+
+#nav-bar-items ul li:hover .sub1 ul li:last-child {
+  border-bottom: none;
+}
+
+#nav-bar-items ul li:hover .sub1 ul li a:hover {
+  color: #79ba43;
+}
+
+.search-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 60px;
+  background: #353535;
+  line-height: 40px;
+  padding: 10px;
+  border-radius: 60px;
+  cursor: pointer;
+  margin-left: 200px;
+  font-size: 18;
+}
+
+.search-input {
+  background: #353535;
+  color: #fff;
+  outline: none;
+  border: none;
+  line-height: 40px;
+  width: 0px;
+  float: left;
+  font-size: 1em;
+  transition: 0.7s ease;
+}
+
+.search-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background: #353535;
+  padding: 12px;
+  border-radius: 50%;
+  float: right;
+  color: #79ba43;
+  transition: 0.4s ease;
+}
+
+.search-box:hover>.search-input,
+.search-input:focus {
+  width: 240px;
+  margin: 0px 8px;
+}
+
+.search-box:hover>.search-btn,
+.search-input:focus+.search-btn {
+  background: #79ba43;
+  color: #101010;
+}
+
+
+h1 {
+  justify-content: center;
+  color: #79ba43;
+  font-size: 35;
+  position: relative;
+  top: -9;
+  margin-left: 0;
+  font-family: 'Kanit', sans-serif;
+  letter-spacing: -3;
+}
+
+#reg-btn{
+  position: relative;
+  left: 400;
+ 
+
+}
+
+#btn-btn-reg{
+    position: relative;
+      top: 20px;
+      float: right; 
+      font-size: 18;
+      font-weight: bold;
+      border-radius: 8px;   
+      padding: 10px 20px;
+      cursor: pointer;
+      background-color: #101010;
+      display: inline-flex;
+}
+    
+#btn-btn-reg:hover{
+    background-color: #365021;   
+    
+}
+
+#btn-btn-reg > a{
+      text-decoration: none;
+      color: white;
+}
